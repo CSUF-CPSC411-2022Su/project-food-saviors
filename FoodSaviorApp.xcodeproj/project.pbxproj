@@ -16,9 +16,6 @@
 		7A0ADFDF28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */; };
 		7A0ADFEC28511E2E00D23FC4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFEB28511E2E00D23FC4 /* .gitignore */; };
 		7A0ADFF028511EA700D23FC4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFEF28511EA700D23FC4 /* .gitattributes */; };
-		7A1F3EF828512899004C9E10 /* Expiration Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F3EF728512899004C9E10 /* Expiration Alerts.swift */; };
-		7A1F3EF928512899004C9E10 /* Expiration Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F3EF728512899004C9E10 /* Expiration Alerts.swift */; };
-		7A1F3EFA28512899004C9E10 /* Expiration Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F3EF728512899004C9E10 /* Expiration Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +48,6 @@
 		7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A0ADFEB28511E2E00D23FC4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A0ADFEF28511EA700D23FC4 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		7A1F3EF728512899004C9E10 /* Expiration Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expiration Alerts.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +104,6 @@
 				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
 				7A0ADFC528511E0600D23FC4 /* Assets.xcassets */,
 				7A0ADFC728511E0600D23FC4 /* Preview Content */,
-				7A1F3EF728512899004C9E10 /* Expiration Alerts.swift */,
 			);
 			path = FoodSaviorApp;
 			sourceTree = "<group>";
@@ -271,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0ADFC428511E0300D23FC4 /* ContentView.swift in Sources */,
-				7A1F3EF828512899004C9E10 /* Expiration Alerts.swift in Sources */,
 				7A0ADFC228511E0300D23FC4 /* FoodSaviorAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1F3EF928512899004C9E10 /* Expiration Alerts.swift in Sources */,
 				7A0ADFD328511E0600D23FC4 /* FoodSaviorAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0ADFDF28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift in Sources */,
-				7A1F3EFA28512899004C9E10 /* Expiration Alerts.swift in Sources */,
 				7A0ADFDD28511E0600D23FC4 /* FoodSaviorAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,8 +10,9 @@ struct ContentView: View {
         
     var body: some View {
         
+        //Home Page View
+        
             NavigationView {
-                
                 Form{
                     Section{
                         VStack {
@@ -61,7 +62,6 @@ struct ContentView: View {
                             })
                             
                     }.background(Color("AccentColor"))
-                     .buttonStyle(BorderlessButtonStyle())//for forms
                         
                     }
                     

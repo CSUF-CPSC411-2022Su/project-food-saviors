@@ -16,6 +16,10 @@
 		7A0ADFDF28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */; };
 		7A0ADFEC28511E2E00D23FC4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFEB28511E2E00D23FC4 /* .gitignore */; };
 		7A0ADFF028511EA700D23FC4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFEF28511EA700D23FC4 /* .gitattributes */; };
+		7A78FC3A2854099C0098D541 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78FC392854099C0098D541 /* Donation.swift */; };
+		7A78FC3C285409AB0098D541 /* DonationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78FC3B285409AB0098D541 /* DonationModel.swift */; };
+		7A78FC3E285409BE0098D541 /* DonationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78FC3D285409BE0098D541 /* DonationRepository.swift */; };
+		7A78FC40285409D20098D541 /* DonationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78FC3F285409D20098D541 /* DonationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A0ADFEB28511E2E00D23FC4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A0ADFEF28511EA700D23FC4 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		7A78FC392854099C0098D541 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		7A78FC3B285409AB0098D541 /* DonationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationModel.swift; sourceTree = "<group>"; };
+		7A78FC3D285409BE0098D541 /* DonationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationRepository.swift; sourceTree = "<group>"; };
+		7A78FC3F285409D20098D541 /* DonationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +108,13 @@
 		7A0ADFC028511E0300D23FC4 /* FoodSaviorApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A0ADFC528511E0600D23FC4 /* Assets.xcassets */,
+				7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */,
 				7A78FC38285406180098D541 /* Services */,
 				7A78FC37285405BA0098D541 /* Models */,
 				7A78FC36285405B00098D541 /* Repositories */,
 				7A78FC35285405380098D541 /* ViewModels */,
 				7A78FC342854052D0098D541 /* Views */,
-				7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */,
-				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
-				7A0ADFC528511E0600D23FC4 /* Assets.xcassets */,
 				7A0ADFC728511E0600D23FC4 /* Preview Content */,
 			);
 			path = FoodSaviorApp;
@@ -141,6 +148,7 @@
 		7A78FC342854052D0098D541 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 		7A78FC35285405380098D541 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				7A78FC3F285409D20098D541 /* DonationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 		7A78FC36285405B00098D541 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				7A78FC3D285409BE0098D541 /* DonationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -162,6 +172,7 @@
 		7A78FC37285405BA0098D541 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7A78FC3B285409AB0098D541 /* DonationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 		7A78FC38285406180098D541 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7A78FC392854099C0098D541 /* Donation.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -305,8 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A78FC40285409D20098D541 /* DonationViewModel.swift in Sources */,
+				7A78FC3A2854099C0098D541 /* Donation.swift in Sources */,
 				7A0ADFC428511E0300D23FC4 /* ContentView.swift in Sources */,
 				7A0ADFC228511E0300D23FC4 /* FoodSaviorAppApp.swift in Sources */,
+				7A78FC3E285409BE0098D541 /* DonationRepository.swift in Sources */,
+				7A78FC3C285409AB0098D541 /* DonationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

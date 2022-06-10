@@ -100,6 +100,11 @@
 		7A0ADFC028511E0300D23FC4 /* FoodSaviorApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A78FC38285406180098D541 /* Services */,
+				7A78FC37285405BA0098D541 /* Models */,
+				7A78FC36285405B00098D541 /* Repositories */,
+				7A78FC35285405380098D541 /* ViewModels */,
+				7A78FC342854052D0098D541 /* Views */,
 				7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */,
 				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
 				7A0ADFC528511E0600D23FC4 /* Assets.xcassets */,
@@ -131,6 +136,41 @@
 				7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */,
 			);
 			path = FoodSaviorAppUITests;
+			sourceTree = "<group>";
+		};
+		7A78FC342854052D0098D541 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A78FC35285405380098D541 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7A78FC36285405B00098D541 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7A78FC37285405BA0098D541 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A78FC38285406180098D541 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

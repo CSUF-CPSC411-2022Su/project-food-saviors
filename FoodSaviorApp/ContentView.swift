@@ -60,7 +60,7 @@ struct ContentView: View {
                             })
                             
                     }.background(Color("AccentColor"))
-                     .buttonStyle(BorderlessButtonStyle())
+                     .buttonStyle(BorderlessButtonStyle())//for forms
                         
                     }
                     

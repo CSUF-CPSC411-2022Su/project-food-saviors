@@ -60,6 +60,7 @@ struct ContentView: View {
                             })
                             
                     }.background(Color("AccentColor"))
+                     .buttonStyle(BorderlessButtonStyle())
                         
                     }
                     

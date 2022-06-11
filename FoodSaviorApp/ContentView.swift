@@ -11,79 +11,56 @@ struct ContentView: View {
     var body: some View {
         
             NavigationView {
-                Form{
-                    Section{
+                
                         VStack {
-                            Button(action: {
-                                    print("Inventory Action")
-                                }, label: {
-                                    Text("Inventory")
-                                        .bold()
-                                        .frame(width: 250, height: 65)
-                                        .foregroundColor(Color.white)
-                                        .background(Color.gray)
-                                        .cornerRadius(8)
-                                        .padding(35)
-                            })
-                            Button(action: {
-                                    print("Donation Action")
-                                }, label: {
-                                    Text("Donation")
-                                        .bold()
-                                        .frame(width: 250, height: 65)
-                                        .foregroundColor(Color.white)
-                                        .background(Color.gray)
-                                        .cornerRadius(8)
-                                        .padding(35)
-                            })
-                            Button(action: {
-                                    print("Recipes Action")
-                                }, label: {
-                                    Text("Recipes")
-                                        .bold()
-                                        .frame(width: 250, height: 65)
-                                        .foregroundColor(Color.white)
-                                        .background(Color.gray)
-                                        .cornerRadius(8)
-                                        .padding(35)
-                            })
-                            Button(action: {
-                                    print("Alert Action")
-                                }, label: {
-                                    Text("Alerts")
-                                        .bold()
-                                        .frame(width: 250, height: 65)
-                                        .foregroundColor(Color.white)
-                                        .background(Color.gray)
-                                        .cornerRadius(8)
-                                        .padding(35)
-                            })
                             
-                    }.background(Color("AccentColor"))
-                     .buttonStyle(BorderlessButtonStyle())//for forms
-                        
-                    }
-                    
-                }.navigationTitle("Home")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar{
-                        ToolbarItemGroup(placement: .navigationBarTrailing){
-                            Button{print("Home icon pressed...")
-                            } label: {
-                                Label("HOME",systemImage: "house.fill")
-                            }.foregroundColor(.black)
-                        }
-                    }
+                            NavigationLink(destination: InventoryView()) {
+                                Text("Inventory")
+                                    .frame(minWidth: 0, maxWidth: 300)
+                                                        .padding()
+                                                        .foregroundColor(.white)
+                                                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                                                        .cornerRadius(40)
+                                                        .font(.title)
+                            }
+                            NavigationLink(destination: DonationView()) {
+                                Text("Donation")
+                                    .frame(minWidth: 0, maxWidth: 300)
+                                                        .padding()
+                                                        .foregroundColor(.white)
+                                                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                                                        .cornerRadius(40)
+                                                        .font(.title)
+                            }
+                            NavigationLink(destination: RecipesView()) {
+                                Text("Recipes")
+                                    .frame(minWidth: 0, maxWidth: 300)
+                                                        .padding()
+                                                        .foregroundColor(.white)
+                                                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                                                        .cornerRadius(40)
+                                                        .font(.title)
+                            }
+                            
+                            NavigationLink(destination: AlertsView()) {
+                                Text("Alerts")
+                                    .frame(minWidth: 0, maxWidth: 300)
+                                                        .padding()
+                                                        .foregroundColor(.white)
+                                                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                                                        .cornerRadius(40)
+                                                        .font(.title)
+                            }
+                            
+                            
+                            
+                           
+                            
+                            
+                  
     }
-        HStack{
-            Text("We are here to help you save food!!!")
-                .bold()
-                .foregroundColor(Color.black)
-                                            
-                   
-            }
-        
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {

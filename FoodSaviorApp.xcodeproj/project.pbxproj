@@ -11,6 +11,8 @@
 		6EDD5E7F2854101E001E4B58 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E7E2854101E001E4B58 /* AlertsView.swift */; };
 		6EDD5E8128541031001E4B58 /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E8028541031001E4B58 /* DonationView.swift */; };
 		6EDD5E83285410F1001E4B58 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E82285410F1001E4B58 /* InventoryView.swift */; };
+		6EDD5E8628568024001E4B58 /* SpecificRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E8528568024001E4B58 /* SpecificRecipeView.swift */; };
+		6EDD5E8928568372001E4B58 /* SearchBasedOnIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E8828568372001E4B58 /* SearchBasedOnIngredientsView.swift */; };
 		7A0ADFC228511E0300D23FC4 /* FoodSaviorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */; };
 		7A0ADFC428511E0300D23FC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFC328511E0300D23FC4 /* ContentView.swift */; };
 		7A0ADFC628511E0600D23FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFC528511E0600D23FC4 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		6EDD5E7E2854101E001E4B58 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 		6EDD5E8028541031001E4B58 /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
 		6EDD5E82285410F1001E4B58 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		6EDD5E8528568024001E4B58 /* SpecificRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificRecipeView.swift; sourceTree = "<group>"; };
+		6EDD5E8828568372001E4B58 /* SearchBasedOnIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBasedOnIngredientsView.swift; sourceTree = "<group>"; };
 		7A0ADFBE28511E0300D23FC4 /* FoodSaviorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSaviorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppApp.swift; sourceTree = "<group>"; };
 		7A0ADFC328511E0300D23FC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EDD5E8428567EEB001E4B58 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				6EDD5E7C2854082C001E4B58 /* RecipesView.swift */,
+				6EDD5E8828568372001E4B58 /* SearchBasedOnIngredientsView.swift */,
+				6EDD5E8528568024001E4B58 /* SpecificRecipeView.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
 		7A0ADFB528511E0300D23FC4 = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +122,11 @@
 		7A0ADFC028511E0300D23FC4 /* FoodSaviorApp */ = {
 			isa = PBXGroup;
 			children = (
+				6EDD5E8428567EEB001E4B58 /* Recipes */,
 				7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */,
 				6EDD5E8028541031001E4B58 /* DonationView.swift */,
 				6EDD5E82285410F1001E4B58 /* InventoryView.swift */,
 				6EDD5E7E2854101E001E4B58 /* AlertsView.swift */,
-				6EDD5E7C2854082C001E4B58 /* RecipesView.swift */,
 				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
 				7A0ADFC528511E0600D23FC4 /* Assets.xcassets */,
 				7A0ADFC728511E0600D23FC4 /* Preview Content */,
@@ -277,11 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDD5E8628568024001E4B58 /* SpecificRecipeView.swift in Sources */,
 				7A0ADFC428511E0300D23FC4 /* ContentView.swift in Sources */,
 				6EDD5E8128541031001E4B58 /* DonationView.swift in Sources */,
 				6EDD5E7F2854101E001E4B58 /* AlertsView.swift in Sources */,
 				6EDD5E83285410F1001E4B58 /* InventoryView.swift in Sources */,
 				6EDD5E7D2854082C001E4B58 /* RecipesView.swift in Sources */,
+				6EDD5E8928568372001E4B58 /* SearchBasedOnIngredientsView.swift in Sources */,
 				7A0ADFC228511E0300D23FC4 /* FoodSaviorAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

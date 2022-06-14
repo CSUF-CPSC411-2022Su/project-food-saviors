@@ -2,7 +2,7 @@
 //  Inventories.swift
 //  FoodSaviorApp
 //
-//  Created by csuftitan on 6/11/22.
+//  Created by Sarthak Gajjar on 6/11/22.
 //
 
 import Foundation

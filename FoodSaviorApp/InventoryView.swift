@@ -2,7 +2,7 @@
 //  InventoryView.swift
 //  FoodSaviorApp
 //
-//  Created by Sarthak Gajjar on 10/06/22.
+//  Created by Manthan Vasani on 10/06/22.
 //
 
 import SwiftUI

@@ -18,9 +18,9 @@
 		7A0ADFD328511E0600D23FC4 /* FoodSaviorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFD228511E0600D23FC4 /* FoodSaviorAppTests.swift */; };
 		7A0ADFDD28511E0600D23FC4 /* FoodSaviorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFDC28511E0600D23FC4 /* FoodSaviorAppUITests.swift */; };
 		7A0ADFDF28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */; };
-		7A0ADFEC28511E2E00D23FC4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFEB28511E2E00D23FC4 /* .gitignore */; };
-		7A0ADFF028511EA700D23FC4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7A0ADFEF28511EA700D23FC4 /* .gitattributes */; };
 		7A26F31B28584238001EED41 /* DonationInventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A26F31A28584238001EED41 /* DonationInventoryView.swift */; };
+		7AA3988C2858633700910E70 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7AA3988B2858633700910E70 /* .gitattributes */; };
+		7AA398922858641800910E70 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AA398912858641800910E70 /* .gitignore */; };
 		7AB59C0A285519EE00B35A31 /* Inventory_Space1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */; };
 		7AB59C0C28551AD200B35A31 /* Inventory_Space2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB59C0B28551AD200B35A31 /* Inventory_Space2.swift */; };
 		7AB59C0E28551AE400B35A31 /* Inventory_Space3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */; };
@@ -89,9 +89,9 @@
 		7A0ADFD828511E0600D23FC4 /* FoodSaviorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSaviorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0ADFDC28511E0600D23FC4 /* FoodSaviorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppUITests.swift; sourceTree = "<group>"; };
 		7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7A0ADFEB28511E2E00D23FC4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		7A0ADFEF28511EA700D23FC4 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7A26F31A28584238001EED41 /* DonationInventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationInventoryView.swift; sourceTree = "<group>"; };
+		7AA3988B2858633700910E70 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		7AA398912858641800910E70 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_Space1.swift; sourceTree = "<group>"; };
 		7AB59C0B28551AD200B35A31 /* Inventory_Space2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_Space2.swift; sourceTree = "<group>"; };
 		7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_Space3.swift; sourceTree = "<group>"; };
@@ -157,9 +157,9 @@
 		7A0ADFB528511E0300D23FC4 = {
 			isa = PBXGroup;
 			children = (
+				7AA398912858641800910E70 /* .gitignore */,
+				7AA3988B2858633700910E70 /* .gitattributes */,
 				7A0ADFC028511E0300D23FC4 /* FoodSaviorApp */,
-				7A0ADFEF28511EA700D23FC4 /* .gitattributes */,
-				7A0ADFEB28511E2E00D23FC4 /* .gitignore */,
 				7A0ADFD128511E0600D23FC4 /* FoodSaviorAppTests */,
 				7A0ADFDB28511E0600D23FC4 /* FoodSaviorAppUITests */,
 				7A0ADFBF28511E0300D23FC4 /* Products */,
@@ -361,11 +361,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA398922858641800910E70 /* .gitignore in Resources */,
+				7AA3988C2858633700910E70 /* .gitattributes in Resources */,
 				7A0ADFC928511E0600D23FC4 /* Preview Assets.xcassets in Resources */,
-				7A0ADFEC28511E2E00D23FC4 /* .gitignore in Resources */,
 				7AB59C1428552D3100B35A31 /* GoogleService-Info.plist in Resources */,
 				7A0ADFC628511E0600D23FC4 /* Assets.xcassets in Resources */,
-				7A0ADFF028511EA700D23FC4 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

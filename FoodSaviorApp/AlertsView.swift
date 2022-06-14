@@ -2,7 +2,7 @@
 //  AlertsView.swift
 //  FoodSaviorApp
 //
-//  Created by Manthan Vasani on 10/06/22.
+//  Created by Keerthi Vardhan on 10/06/22.
 //
 
 import SwiftUI

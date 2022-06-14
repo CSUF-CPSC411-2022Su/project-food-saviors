@@ -2,7 +2,7 @@
 //  DonationView.swift
 //  FoodSaviorApp
 //
-//  Created by Himani Tawade on 10/06/22.
+//  Created by Manthan Vasani on 10/06/22.
 //
 
 import SwiftUI

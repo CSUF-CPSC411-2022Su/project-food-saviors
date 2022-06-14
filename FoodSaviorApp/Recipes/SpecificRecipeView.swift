@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct SpecificRecipeView: View {
+    @State private var searchVideo = ""
+    
     var body: some View {
-        Text("Search Recipe Here!")
+        NavigationView {
+            Text(searchVideo == "" ? "" : "Searching for \(searchVideo)")
+            .searchable(text: $searchVideo, prompt: "Looking for")
+            .navigationTitle("Search Recipe")
+            
+                    
+            
+            
+        }
     }
 }
+    
+   
 
 struct SpecificRecipeView_Previews: PreviewProvider {
     static var previews: some View {

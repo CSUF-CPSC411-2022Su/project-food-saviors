@@ -29,6 +29,7 @@ struct RecipesView: View {
                                             .cornerRadius(40)
                                             .font(.title)
                 }
+                
                 .navigationTitle("Navigation")
             }
         }

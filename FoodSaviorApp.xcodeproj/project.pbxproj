@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E96D64A2859D26F00486C3E /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E96D6492859D26F00486C3E /* VideoData.swift */; };
+		6E96D64E2859E39D00486C3E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E96D64D2859E39D00486C3E /* WebView.swift */; };
+		6E96D6502859E4F400486C3E /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E96D64F2859E4F400486C3E /* YouTubeView.swift */; };
 		6EDD5E7D2854082C001E4B58 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E7C2854082C001E4B58 /* RecipesView.swift */; };
 		6EDD5E7F2854101E001E4B58 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E7E2854101E001E4B58 /* AlertsView.swift */; };
 		6EDD5E8128541031001E4B58 /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD5E8028541031001E4B58 /* DonationView.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E96D6492859D26F00486C3E /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
+		6E96D64D2859E39D00486C3E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		6E96D64F2859E4F400486C3E /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 		6EDD5E7C2854082C001E4B58 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		6EDD5E7E2854101E001E4B58 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 		6EDD5E8028541031001E4B58 /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 				6EDD5E7C2854082C001E4B58 /* RecipesView.swift */,
 				6EDD5E8828568372001E4B58 /* SearchBasedOnIngredientsView.swift */,
 				6EDD5E8528568024001E4B58 /* SpecificRecipeView.swift */,
+				6E96D6492859D26F00486C3E /* VideoData.swift */,
+				6E96D64D2859E39D00486C3E /* WebView.swift */,
+				6E96D64F2859E4F400486C3E /* YouTubeView.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -292,10 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EDD5E8628568024001E4B58 /* SpecificRecipeView.swift in Sources */,
+				6E96D64E2859E39D00486C3E /* WebView.swift in Sources */,
 				7A0ADFC428511E0300D23FC4 /* ContentView.swift in Sources */,
 				6EDD5E8128541031001E4B58 /* DonationView.swift in Sources */,
 				6EDD5E7F2854101E001E4B58 /* AlertsView.swift in Sources */,
+				6E96D6502859E4F400486C3E /* YouTubeView.swift in Sources */,
 				6EDD5E83285410F1001E4B58 /* InventoryView.swift in Sources */,
+				6E96D64A2859D26F00486C3E /* VideoData.swift in Sources */,
 				6EDD5E7D2854082C001E4B58 /* RecipesView.swift in Sources */,
 				6EDD5E8928568372001E4B58 /* SearchBasedOnIngredientsView.swift in Sources */,
 				7A0ADFC228511E0300D23FC4 /* FoodSaviorAppApp.swift in Sources */,

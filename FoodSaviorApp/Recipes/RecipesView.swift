@@ -29,6 +29,15 @@ struct RecipesView: View {
                                             .cornerRadius(40)
                                             .font(.title)
                 }
+                NavigationLink(destination: YouTubeView()) {
+                    Text("Youtube view")
+                        .frame(minWidth: 0, maxWidth: 300)
+                                            .padding()
+                                            .foregroundColor(.white)
+                                            .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
+                                            .cornerRadius(40)
+                                            .font(.title)
+                }
                 
                 .navigationTitle("Navigation")
             }

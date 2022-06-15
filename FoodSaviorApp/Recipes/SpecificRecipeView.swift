@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct SpecificRecipeView: View {
-    @State private var searchVideo = ""
+    private var videoList = recipeList
+    @State var searchText = ""
     
     var body: some View {
         NavigationView {
-            Text(searchVideo == "" ? "" : "Searching for \(searchVideo)")
-            .searchable(text: $searchVideo, prompt: "Looking for")
-            .navigationTitle("Search Recipe")
-            
-                    
-            
-            
+            List {
+                ForEach(recipes, id: \.self) {
+                    country in
+                    HStack {
+                        Text(country.capitalized)
+                        Spacer()
+                        Image(systemName: "takeoutbag.and.cup.and.straw")
+                            .foregroundColor(Color.blue)
+                    }
+                    .padding()
+                }
+                
+            }
+            .searchable(text: $searchText)
+            .navigationTitle("Search Recipes")
+        }
+    }
+    
+    var recipes: [String] {
+        let lcVideoList = videoList.map {
+            $0.lowercased()
+        }
+        return searchText == "" ? lcVideoList : lcVideoList.filter{
+            $0.contains(searchText.lowercased())
         }
     }
 }

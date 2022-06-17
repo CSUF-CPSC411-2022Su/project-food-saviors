@@ -9,39 +9,41 @@ import SwiftUI
 
 struct RecipesView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(destination: SpecificRecipeView()) {
-                    Text("Find a specific recipe")
-                        .frame(minWidth: 0, maxWidth: 300)
-                                            .padding()
-                                            .foregroundColor(.white)
-                                            .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
-                                            .cornerRadius(40)
-                                            .font(.title)
+        VStack(alignment: .leading, spacing: 10) {
+            
+            NavigationView {
+                HStack {
+                    NavigationLink(destination: SpecificRecipeView()) {
+                        Text("Find a specific recipe")
+                            .frame(minWidth: 0, maxWidth: 100)
+                                                .padding(30)
+                                                .foregroundColor(.white)
+                                                .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
+                                                .cornerRadius(40)
+                                                .font(.body)
+                    }
+                    .padding()
+                    NavigationLink(destination: SearchBasedOnIngredientsView()) {
+                        Text("Based on ingrediants you have")
+                            .frame(minWidth: 0, maxWidth: 100)
+                                                .padding(30)
+                                                .foregroundColor(.white)
+                                                .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
+                                                .cornerRadius(40)
+                                                .font(.body)
+                    }
+                    .padding()
+                    .navigationTitle("Find a recipe")
                 }
-                NavigationLink(destination: SearchBasedOnIngredientsView()) {
-                    Text("Search recipe based on ingrediants you have")
-                        .frame(minWidth: 0, maxWidth: 300)
-                                            .padding()
-                                            .foregroundColor(.white)
-                                            .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
-                                            .cornerRadius(40)
-                                            .font(.title)
-                }
-//                NavigationLink(destination: YouTubeView()) {
-//                    Text("Youtube view")
-//                        .frame(minWidth: 0, maxWidth: 300)
-//                                            .padding()
-//                                            .foregroundColor(.white)
-//                                            .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
-//                                            .cornerRadius(40)
-//                                            .font(.title)
-//                }
-//
-                .navigationTitle("Navigation")
             }
         }
+        
+        VStack{
+            
+            
+        }
+        
+       
         
     }
 }
@@ -50,6 +52,11 @@ struct RecipesView: View {
 
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesView()
+        Group {
+            RecipesView()
+                .previewInterfaceOrientation(.portrait)
+            RecipesView()
+                .previewInterfaceOrientation(.portrait)
+        }
     }
 }

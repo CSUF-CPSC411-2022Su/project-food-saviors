@@ -16,28 +16,7 @@ struct SpecificRecipeView: View {
     
     @State var selection: Int? = nil
     var body: some View {
-//        NavigationView {
-//            List {
-//                ForEach(recipes, id: \.self) {
-//                    country in
-//                    HStack {
-//                        Text(country.capitalized)
-//                        Spacer()
-//                        Image(systemName: "takeoutbag.and.cup.and.straw")
-//                            .foregroundColor(Color.blue)
-//                    }
-//                    .padding()
-//                }
-//
-//            }
-//            .searchable(text: $searchText)
-//            .navigationTitle("Search Recipes")
-//        }
-        
-//        VStack {
-//            TextField("Enter Recipe", text: $data)
-//            self.data = data
-//        }
+
         NavigationView{
             
             
@@ -73,26 +52,11 @@ struct SpecificRecipeView: View {
             }
             
         }
-//        VStack {
-//            TextField("Search Video", text: $data)
-//            Button(action: {NavigationLink(destination: SpecificRecipeView()) {
-//
-//            }}) {
-//                Text("Press")
-//            }
-//        }
-        
+
         
     }
     
-    var recipes: [String] {
-        let lcVideoList = videoList.map {
-            $0.lowercased()
-        }
-        return searchText == "" ? lcVideoList : lcVideoList.filter{
-            $0.contains(searchText.lowercased())
-        }
-    }
+   
 }
     
    

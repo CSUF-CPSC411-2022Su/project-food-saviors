@@ -10,25 +10,79 @@ import SwiftUI
 struct SpecificRecipeView: View {
     private var videoList = recipeList
     @State var searchText = ""
+    @State var data:String = ""
     
+    @State var showSearch: Bool = false
+    
+    @State var selection: Int? = nil
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(recipes, id: \.self) {
-                    country in
-                    HStack {
-                        Text(country.capitalized)
-                        Spacer()
-                        Image(systemName: "takeoutbag.and.cup.and.straw")
-                            .foregroundColor(Color.blue)
-                    }
+//        NavigationView {
+//            List {
+//                ForEach(recipes, id: \.self) {
+//                    country in
+//                    HStack {
+//                        Text(country.capitalized)
+//                        Spacer()
+//                        Image(systemName: "takeoutbag.and.cup.and.straw")
+//                            .foregroundColor(Color.blue)
+//                    }
+//                    .padding()
+//                }
+//
+//            }
+//            .searchable(text: $searchText)
+//            .navigationTitle("Search Recipes")
+//        }
+        
+//        VStack {
+//            TextField("Enter Recipe", text: $data)
+//            self.data = data
+//        }
+        NavigationView{
+            
+            
+            VStack{
+                TextField("Search Video", text: $data, onCommit: {
+                    self.showSearch = true
+                })
                     .padding()
-                }
                 
+                NavigationLink(destination: YouTubeView(data: $data), tag: 1, selection: $selection) {
+                    
+                    
+                    
+                    Button(action: {
+                        self.data = data
+                            print("login tapped")
+                            self.selection = 1
+                        }) {
+                            HStack {
+                                Spacer()
+                                Text("Search").foregroundColor(Color.white).bold()
+                                Spacer()
+                            }
+                        }
+                        .accentColor(Color.black)
+                        .frame(minWidth: 0, maxWidth: 300)
+                        .padding()
+                        .background(Color(UIColor.darkGray))
+                        .cornerRadius(4.0)
+                        .padding(Edge.Set.vertical, 20)
+                }
+    
             }
-            .searchable(text: $searchText)
-            .navigationTitle("Search Recipes")
+            
         }
+//        VStack {
+//            TextField("Search Video", text: $data)
+//            Button(action: {NavigationLink(destination: SpecificRecipeView()) {
+//
+//            }}) {
+//                Text("Press")
+//            }
+//        }
+        
+        
     }
     
     var recipes: [String] {

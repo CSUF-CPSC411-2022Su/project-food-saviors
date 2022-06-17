@@ -14,17 +14,20 @@ extension View {
 }
 
 struct YouTubeView: View {
+
     @State private var showLoading: Bool = false
+    @Binding var data: String
     var body: some View {
-        let key1 = "burger"
-        WebView(url: URL(string: "https://www.youtube.com/")!, showLoading: $showLoading)
+        Text("Serarched for: "+self.data)
+        WebView(url: URL(string: "https://www.youtube.com/results?search_query="+self.data)!, showLoading: $showLoading)
             .overlay(showLoading ? ProgressView("Loading...").toAnyView() : EmptyView().toAnyView())
            
     }
 }
 
 struct YouTubeView_Previews: PreviewProvider {
+    @State static var data: String = ""
     static var previews: some View {
-        YouTubeView()
+        YouTubeView(data: $data)
     }
 }

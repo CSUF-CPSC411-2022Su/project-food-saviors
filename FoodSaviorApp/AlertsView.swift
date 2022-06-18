@@ -14,35 +14,61 @@ struct DoingAlerts{
     var store: String
     
 }
+
+        
+        
 struct AlertsView: View {
     var body: some View {
-        VStack {
+       
             Text("Alerts!")
-            GeometryReader { geometry in
+        Spacer()
+           
             VStack {
-                
-                Spacer()
-                Text("Item 1")
-                Spacer()
+        
+                Text("Item 1").bold()
+                HStack{
                 Text("Expires on 2022-02-12")
-                Spacer()
+                }
+                HStack{
                 Text("It is at Cupboard 2")
-                Spacer()
-            }.frame(height: geometry.size.height / 8 )
-            Spacer()
-                
-                VStack {
-                    
-                    Spacer()
-                    Text("Item 2")
-                    Spacer()
+                }
+                Text("Item 2").bold()
+                HStack{
                     Text("Expires on 2022-05-18")
-                    Spacer()
+                }
+                HStack{
                     Text("It is at Refrigerator 2")
-                    Spacer()
-                }.frame(height: geometry.size.height / 8 )
-                Spacer()
-            }
+                }
+                
+                Text("Item 3").bold()
+                HStack{
+                Text("Expires on 2022-02-12")
+                }
+                HStack{
+                Text("It is at Cupboard 1")
+                }
+                Text("Item 4").bold()
+                HStack{
+                    Text("Expires on 2020-10-08")
+                }
+                HStack{
+                    Text("It is at Refrigerator 1")
+                }
+            
+                Text("Item 5").bold()
+                HStack{
+                Text("Expires on 2022-02-19")
+                }
+                HStack{
+                Text("It is at Cupboard 3")
+                }
+                Text("Item 6").bold()
+                HStack{
+                    Text("Expires on 2021-12-05")
+                }
+                HStack{
+                    Text("It is at Refrigerator 3")
+                }
     }
 }
 }

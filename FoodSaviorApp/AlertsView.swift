@@ -20,58 +20,34 @@ struct DoingAlerts{
 struct AlertsView: View {
     var body: some View {
        
-            Text("Alerts!")
+        Text("ALARMED FOOD ITEMS").bold()
         Spacer()
-           
-            VStack {
         
-                Text("Item 1").bold()
-                HStack{
-                Text("Expires on 2022-02-12")
+        VStack {
+            List {
+                Section(header: Text("ITEM 1")) {
+                    Text("Expires on 06-12-2022")
+                    Text("Placed in refrigerator 2")
                 }
-                HStack{
-                Text("It is at Cupboard 2")
+                Section(header: Text("ITEM 2")) {
+                    Text("Expires on 08-19-2021")
+                    Text("Placed in Cupboard 1")
                 }
-                Text("Item 2").bold()
-                HStack{
-                    Text("Expires on 2022-05-18")
+                Section(header: Text("ITEM 3")) {
+                    Text("Expires on 12-22-2022")
+                    Text("Placed in Refrigerator 1")
                 }
-                HStack{
-                    Text("It is at Refrigerator 2")
+                Section(header: Text("ITEM 4")) {
+                    Text("Expires on 10-02-2021")
+                    Text("Placed in Cupboard 2")
                 }
-                
-                Text("Item 3").bold()
-                HStack{
-                Text("Expires on 2022-02-12")
-                }
-                HStack{
-                Text("It is at Cupboard 1")
-                }
-                Text("Item 4").bold()
-                HStack{
-                    Text("Expires on 2020-10-08")
-                }
-                HStack{
-                    Text("It is at Refrigerator 1")
-                }
+            }
             
-                Text("Item 5").bold()
-                HStack{
-                Text("Expires on 2022-02-19")
-                }
-                HStack{
-                Text("It is at Cupboard 3")
-                }
-                Text("Item 6").bold()
-                HStack{
-                    Text("Expires on 2021-12-05")
-                }
-                HStack{
-                    Text("It is at Refrigerator 3")
-                }
-    }
+        }.background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .leading, endPoint: .trailing))
+        .cornerRadius(40)
 }
 }
+
 struct AlertsView_Previews: PreviewProvider {
     static var previews: some View {
         AlertsView()

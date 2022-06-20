@@ -15,8 +15,6 @@ struct DoingAlerts{
     
 }
 
-        
-        
 struct AlertsView: View {
     var body: some View {
        
@@ -42,6 +40,22 @@ struct AlertsView: View {
                     Text("Placed in Cupboard 2")
                 }
             }
+          
+            
+            NavigationLink(destination: AlertsNavig()) {
+                Text("HELP!")
+                    .frame(minWidth: 0, maxWidth: 120)
+                                        .padding()
+                                        .foregroundColor(.blue)
+                                       
+                                        .cornerRadius(40)
+                                        
+            }
+            
+            
+            
+            
+            
             
         }.background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .leading, endPoint: .trailing))
         .cornerRadius(40)

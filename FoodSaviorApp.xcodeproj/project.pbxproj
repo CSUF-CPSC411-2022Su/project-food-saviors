@@ -21,6 +21,7 @@
 		7A0ADFDD28511E0600D23FC4 /* FoodSaviorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFDC28511E0600D23FC4 /* FoodSaviorAppUITests.swift */; };
 		7A0ADFDF28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */; };
 		7A26F31B28584238001EED41 /* DonationInventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A26F31A28584238001EED41 /* DonationInventoryView.swift */; };
+		7A7F35292861230300A61B89 /* AlertsNavig .swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F35282861230300A61B89 /* AlertsNavig .swift */; };
 		7AB59C0A285519EE00B35A31 /* Inventory_Space1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */; };
 		7AB59C0C28551AD200B35A31 /* Inventory_Space2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB59C0B28551AD200B35A31 /* Inventory_Space2.swift */; };
 		7AB59C0E28551AE400B35A31 /* Inventory_Space3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */; };
@@ -92,6 +93,7 @@
 		7A0ADFDC28511E0600D23FC4 /* FoodSaviorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppUITests.swift; sourceTree = "<group>"; };
 		7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSaviorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A26F31A28584238001EED41 /* DonationInventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationInventoryView.swift; sourceTree = "<group>"; };
+		7A7F35282861230300A61B89 /* AlertsNavig .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertsNavig .swift"; sourceTree = SOURCE_ROOT; };
 		7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_Space1.swift; sourceTree = "<group>"; };
 		7AB59C0B28551AD200B35A31 /* Inventory_Space2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_Space2.swift; sourceTree = "<group>"; };
 		7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory_Space3.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */,
 				7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */,
 				6EDD5E7E2854101E001E4B58 /* AlertsView.swift */,
+				7A7F35282861230300A61B89 /* AlertsNavig .swift */,
 				6EDD5E7C2854082C001E4B58 /* RecipesView.swift */,
 				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
 				7A0ADFC528511E0600D23FC4 /* Assets.xcassets */,
@@ -401,6 +404,7 @@
 				7AB59C1228551B0100B35A31 /* Inventory_Space5.swift in Sources */,
 				7AB59C0A285519EE00B35A31 /* Inventory_Space1.swift in Sources */,
 				6EDD5E7D2854082C001E4B58 /* RecipesView.swift in Sources */,
+				7A7F35292861230300A61B89 /* AlertsNavig .swift in Sources */,
 				7AB59C1028551AF300B35A31 /* Inventory_Space4.swift in Sources */,
 				7A0ADFC228511E0300D23FC4 /* FoodSaviorAppApp.swift in Sources */,
 			);

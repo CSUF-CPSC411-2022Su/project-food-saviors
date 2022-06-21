@@ -79,4 +79,3 @@ struct DonationInventoryView_Previews: PreviewProvider {
         DonationInventoryView()
     }
 }
-

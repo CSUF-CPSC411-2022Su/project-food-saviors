@@ -13,7 +13,7 @@ struct RecipesView: View {
         VStack(alignment: .leading, spacing: 10) {
             
             NavigationView {
-                HStack {
+                VStack {
                     NavigationLink(destination: SpecificRecipeView()) {
                         Text("Find a specific recipe")
                             .frame(minWidth: 0, maxWidth: 100)
@@ -24,7 +24,6 @@ struct RecipesView: View {
                             .font(.body)
                     }
                     .padding()
-                    .navigationTitle("Find a recipe")
                     NavigationLink(destination: SearchBasedOnIngredientsView()) {
                         Text("Based on ingrediants you have")
                             .frame(minWidth: 0, maxWidth: 100)
@@ -36,7 +35,6 @@ struct RecipesView: View {
                     }
                     
                     .padding()
-                    .navigationTitle("Search based on ingredients")
                     
                     NavigationLink(destination: ListVideos()) {
                         Text("Recipe Recommendation")
@@ -49,7 +47,18 @@ struct RecipesView: View {
                     }
                     
                     .padding()
-                    .navigationTitle("Search based on ingredients")
+                    
+                    NavigationLink(destination: YouTubeAPI()) {
+                        Text("YouTube API")
+                            .frame(minWidth: 0, maxWidth: 100)
+                            .padding(30)
+                            .foregroundColor(.white)
+                            .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
+                            .cornerRadius(40)
+                            .font(.body)
+                    }
+                    
+                    .padding()
                     
                     
                     

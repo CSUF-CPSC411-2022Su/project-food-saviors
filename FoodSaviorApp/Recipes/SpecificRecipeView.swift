@@ -51,7 +51,7 @@ struct SpecificRecipeView: View {
     
             }
             
-        }
+        }.navigationTitle("Recipe Search")
 
         
     }

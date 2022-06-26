@@ -25,6 +25,18 @@ struct AlertsNavig: View {
         Text(" Item 4")
         
         }.frame(height: geometry.size.height / 4)
+   
+        TabView {
+                            Storage()
+                                .tabItem {
+                                    Image(systemName: "plus")
+                                    Text("Storage")
+                                }
+                                    
+        }
+        
+
+    
     }
         
 }

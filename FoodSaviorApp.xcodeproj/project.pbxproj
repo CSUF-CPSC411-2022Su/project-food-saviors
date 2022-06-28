@@ -258,14 +258,8 @@
 				7A0ADFC128511E0300D23FC4 /* FoodSaviorAppApp.swift */,
 				7AB59C4C28553F8C00B35A31 /* Info.plist */,
 				7AB59C1328552D3100B35A31 /* GoogleService-Info.plist */,
+				7AFC20CF286AD1A300522816 /* Inventory */,
 				7A0888D1286A700C00C14C54 /* Donation */,
-				7AB59C4D28554B6000B35A31 /* Inventories.swift */,
-				6EDD5E82285410F1001E4B58 /* InventoryView.swift */,
-				7AB59C1128551B0100B35A31 /* Inventory_Space5.swift */,
-				7AB59C0F28551AF300B35A31 /* Inventory_Space4.swift */,
-				7AB59C0B28551AD200B35A31 /* Inventory_Space2.swift */,
-				7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */,
-				7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */,
 				6EDD5E7E2854101E001E4B58 /* AlertsView.swift */,
 				6EDD5E7C2854082C001E4B58 /* RecipesView.swift */,
 				7A0ADFC328511E0300D23FC4 /* ContentView.swift */,
@@ -298,6 +292,44 @@
 				7A0ADFDE28511E0600D23FC4 /* FoodSaviorAppUITestsLaunchTests.swift */,
 			);
 			path = FoodSaviorAppUITests;
+			sourceTree = "<group>";
+		};
+		7AFC20CF286AD1A300522816 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				7AFC20D0286AD1AD00522816 /* Models */,
+				7AFC20D1286AD1B700522816 /* Views */,
+				7AFC20D2286AD1C000522816 /* ModelViews */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		7AFC20D0286AD1AD00522816 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AB59C4D28554B6000B35A31 /* Inventories.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7AFC20D1286AD1B700522816 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EDD5E82285410F1001E4B58 /* InventoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AFC20D2286AD1C000522816 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				7AB59C09285519EE00B35A31 /* Inventory_Space1.swift */,
+				7AB59C0B28551AD200B35A31 /* Inventory_Space2.swift */,
+				7AB59C0D28551AE400B35A31 /* Inventory_Space3.swift */,
+				7AB59C0F28551AF300B35A31 /* Inventory_Space4.swift */,
+				7AB59C1128551B0100B35A31 /* Inventory_Space5.swift */,
+			);
+			path = ModelViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

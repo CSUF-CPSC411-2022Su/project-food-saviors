@@ -14,7 +14,7 @@ struct RecipesView: View {
             
             NavigationView {
                 VStack {
-                    NavigationLink(destination: SpecificRecipeView()) {
+                    NavigationLink(destination: SearchView()) {
                         Text("Find a specific recipe")
                             .frame(minWidth: 0, maxWidth: 100)
                             .padding(30)
@@ -47,19 +47,6 @@ struct RecipesView: View {
                     }
                     
                     .padding()
-                    
-                    NavigationLink(destination: YouTubeAPI()) {
-                        Text("YouTube API")
-                            .frame(minWidth: 0, maxWidth: 100)
-                            .padding(30)
-                            .foregroundColor(.white)
-                            .background(LinearGradient(gradient: Gradient(colors: [Color.black ]), startPoint: .leading, endPoint: .trailing))
-                            .cornerRadius(40)
-                            .font(.body)
-                    }
-                    
-                    .padding()
-                    
                     
                     
                     

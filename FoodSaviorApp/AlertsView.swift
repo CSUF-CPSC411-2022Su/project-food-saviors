@@ -7,22 +7,19 @@
 
 import SwiftUI
 
-
-struct DoingAlerts{
+struct DoingAlerts {
     var item: String
     var date: String
     var store: String
-    
 }
 
 struct AlertsView: View {
     var body: some View {
-       
-        Text("ALARMED FOOD ITEMS").bold()
+        Text("ALARMED FOOD ITEMS").bold()   // Screen Title
         Spacer()
         
         VStack {
-            List {
+            List { // Displays list of items whose expiry date is near
                 Section(header: Text("ITEM 1")) {
                     Text("Expires on 06-12-2022")
                     Text("Placed in refrigerator 2")
@@ -40,26 +37,20 @@ struct AlertsView: View {
                     Text("Placed in Cupboard 2")
                 }
             }
-          
-            
+          //Navigation to new page starts here
             NavigationLink(destination: AlertsNavig()) {
                 Text("HELP!")
                     .frame(minWidth: 0, maxWidth: 120)
-                                        .padding()
-                                        .foregroundColor(.blue)
+                    .padding()
+                    .foregroundColor(.blue)
                                        
-                                        .cornerRadius(40)
-                                        
+                    .cornerRadius(40)
             }
             
-            
-            
-            
-            
-            
         }.background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .leading, endPoint: .trailing))
-        .cornerRadius(40)
-}
+            .cornerRadius(40)
+        // VStack ends here
+    }
 }
 
 struct AlertsView_Previews: PreviewProvider {
@@ -67,4 +58,3 @@ struct AlertsView_Previews: PreviewProvider {
         AlertsView()
     }
 }
-

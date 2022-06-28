@@ -19,7 +19,7 @@ struct SearchView: View {
                 TextField("Search", text: $searchText) { isEditing in
                     print("isEditing", isEditing)
                 } onCommit: {
-                    print("onCommit do something when hitting enter", searchText)
+                    print("search data commited", searchText)
                     youtubeVideoViewModel.fetchVideoWithSeach(searchText: searchText.replacingOccurrences(of: " ", with: "%20"))
                 }
                 .padding()

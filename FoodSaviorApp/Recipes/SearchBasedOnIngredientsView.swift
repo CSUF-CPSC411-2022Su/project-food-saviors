@@ -72,7 +72,7 @@ struct YoutubeApiService {
 
         let task = URLSession.shared.dataTask(with: url) { jsonData, response, err in
             if let err = err {
-                print("failed to get json data", err.localizedDescription)
+                print("Error: Failed to get json data", err.localizedDescription)
                 return
             }
 
@@ -84,7 +84,7 @@ struct YoutubeApiService {
                     completion(youtubeSeachList)
                 }
             } catch let jsonError {
-                print("json serialization error", jsonError)
+                print("Error: json serialization error", jsonError)
             }
         }
         task.resume()
@@ -152,28 +152,41 @@ struct SearchBasedOnIngredientsView: View {
         "Rice",
         "Bread",
         "Garlic",
-        
-        
+        "Capsicum",
+        "Zucchini",
+        "Meat",
+        "Chicken",
+        "Pork",
+        "Beaf",
+        "Cabbage",
+        "Lettuce",
+        "Chickpeas",
+        "Beans",
+        "Noodles"
     ]
 
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 
                 List(names, id: \.self, selection: $selection) { name in
                     Text(name)
                 }
-                .navigationTitle("List Selection")
+                .navigationTitle("Select Ingredients")
                 .toolbar {
                     EditButton()
                 }
                 
-               
+                Spacer()
+
                 
                 Button("Search"){
                     youtubeVideoViewModel.fetchVideoWithSeach(searchText: selection.joined(separator: " ").replacingOccurrences(of: " ", with: "%20"))
 
-                }
+                }.padding()
+                Spacer()
+
                 List {
                     ForEach(0..<youtubeVideoViewModel.youtubeSearchItems.count, id: \.self) { index in
                         HStack {

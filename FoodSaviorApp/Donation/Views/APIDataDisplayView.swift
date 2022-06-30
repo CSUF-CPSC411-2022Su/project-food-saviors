@@ -2,11 +2,10 @@
 //  APIDataDisplayView.swift
 //  FoodSaviorApp
 //
-//  Created by csuftitan on 6/20/22.
+//  Created by Himani Tawade on 6/20/22.
 //
 
 import SwiftUI
-
 
 struct APIView: View {
     @AppStorage("selection") var selection: String = "None"
@@ -17,58 +16,44 @@ struct APIView: View {
     
     var body: some View {
         NavigationView {
-        VStack {
-                if (selection == "NGO"){
-                Section(header: Text("NGO")) {
-                    
-                    ScrollView(.horizontal){
-                        HStack(spacing: 20) {
-                            
-                            ForEach(0..<9){ index in
+            VStack {
+                if selection == "NGO" {
+                    Section(header: Text("NGO")) {
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 20) {
+                                ForEach(0..<9) { index in
                                 
-                                GoogleView(index: index)
-                                    .padding()
-                                
+                                    GoogleView(index: index)
+                                        .padding()
+                                }
+                                .padding()
                             }
-                            .padding()
+                            Divider()
+                                .onAppear {
+                                    fetch.fetchGoogle(searchWord: searchWord+City)
+                                }
                         }
-                        Divider()
-                            .onAppear{
-                                fetch.fetchGoogle(searchWord: searchWord+City)
-                            }
                     }
-                    
                 }
-                }
-                if (selection == "Donate"){
-                Section(header: Text("Donate")) {
-                  
-                    ScrollView(.horizontal){
-                        HStack(spacing: 20) {
-                            
-                            ForEach(0..<9){ index in
+                if selection == "Donate" {
+                    Section(header: Text("Donate")) {
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 20) {
+                                ForEach(0..<9) { index in
                                 
-                                GoogleView(index: index)
-                                    .padding()
-                                
+                                    GoogleView(index: index)
+                                        .padding()
+                                }
+                                .padding()
                             }
-                            .padding()
+                            Divider()
+                                .onAppear {
+                                    fetch.fetchGoogle(searchWord: searchWord1+City)
+                                }
                         }
-                        Divider()
-                            .onAppear{
-                                fetch.fetchGoogle(searchWord: searchWord1+City)
-                            }
                     }
-                    
                 }
-                }
-                
-                }
+            }
         }
-        
     }
 }
-
-
-
-

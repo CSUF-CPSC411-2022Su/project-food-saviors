@@ -2,10 +2,9 @@
 //  Modifer.swift
 //  FoodSaviorApp
 //
-//  Created by csuftitan on 6/27/22.
+//  Created by Himani Tawade on 6/27/22.
 //
 import SwiftUI
-
 
 struct ButtonDesign: ViewModifier {
     func body(content: Content) -> some View {

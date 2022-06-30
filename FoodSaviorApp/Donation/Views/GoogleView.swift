@@ -2,22 +2,20 @@
 //  SwiftUIView.swift
 //  FoodSaviorApp
 //
-//  Created by csuftitan on 6/27/22.
+//  Created by Himani Tawade on 6/27/22.
 //
 
 import SwiftUI
 
-
-extension String{
-    
-    func load() -> UIImage{
+extension String {
+    func load() -> UIImage {
         do {
             guard let url = URL(string: self) else {
                 return UIImage()
             }
             
             let data: Data = try
-            Data(contentsOf: url)
+                Data(contentsOf: url)
             
             return UIImage(data: data) ?? UIImage()
                 
@@ -27,28 +25,24 @@ extension String{
         return UIImage()
     }
 }
+
 struct GoogleView: View {
-    
     @ObservedObject var googleManager = GoogleManager.shared()
     @State var index: Int
     
-    
     var body: some View {
-        
         ScrollView(.horizontal) {
-            
             HStack(spacing: 20) {
-                
-                ForEach(googleManager.items.allItems, id: \.id){
+                ForEach(googleManager.items.allItems, id: \.id) {
                     item in
                     
-                    VStack{
+                    VStack {
                         Spacer()
                         Text(item.title[index]!)
                             .frame(width: 200, height: 60)
                             .font(.headline)
                         
-                        ForEach(googleManager.images.allImages, id: \.id){ image in
+                        ForEach(googleManager.images.allImages, id: \.id) { image in
                             
                             Image(uiImage: (image.image[index]?.load() ?? UIImage(systemName: "camera"))!)
                                 .resizable()
@@ -68,13 +62,12 @@ struct GoogleView: View {
                     }
                 }
             }.frame(maxHeight: .infinity)
-            
         }
     }
 }
 
-//struct GoogleView_Previews: PreviewProvider {
-  //  static var previews: some View {
-    //    GoogleView()
-    //}
-//}
+// struct GoogleView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    GoogleView()
+// }
+// }

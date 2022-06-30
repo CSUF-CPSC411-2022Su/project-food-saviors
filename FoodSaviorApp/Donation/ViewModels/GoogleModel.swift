@@ -2,13 +2,12 @@
 //  GoogleModel.swift
 //  FoodSaviorApp
 //
-//  Created by csuftitan on 6/27/22.
+//  Created by Himani Tawade on 6/27/22.
 //
 
 import Foundation
 
-struct GoogleModel: Identifiable{
-    
+struct GoogleModel: Identifiable {
     let id = UUID()
     let title: [String?]
     let description: [String?]
@@ -19,8 +18,7 @@ struct ItemsData {
     var allItems: [GoogleModel]
 }
 
-struct GoogleImage: Identifiable{
-    
+struct GoogleImage: Identifiable {
     let id = UUID()
     let image: [String?]
 }

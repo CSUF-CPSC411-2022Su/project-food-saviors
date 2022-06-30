@@ -8,42 +8,32 @@
 import SwiftUI
 
 struct DonationView: View {
-    
     @AppStorage("selection") var selection = "None"
     
     var body: some View {
-            NavigationView {
-
-                        VStack {
+        NavigationView {
+            VStack {
+                Spacer()
+                VStack {
+                    NavigationLink(destination: SelectionPageView()) {
+                        Text("Choose Anyone").foregroundColor(.black)
+                    }
+                }
+                Spacer()
+                HStack {
+                    Image("Donation Feature")
+                        .resizable()
+                        .scaledToFit()
+                }
                             
-                                Spacer()
-                                VStack{
-                                    NavigationLink(destination: SelectionPageView()) {
-                                       
-                                        Text("Choose Anyone").foregroundColor(.black)
-                    
-                                    }
-                                }
-                                    Spacer()
-                                HStack{
-                                    Image("Donation Feature")
-                                                .resizable()
-                                                .scaledToFit()
-                                    
-                                }
-                            
-                        }.navigationTitle("Want to Share Food ?")
-                         .navigationBarTitleDisplayMode(.inline)}
-                            
-                        
-               
-           
-            }
-            
-        }
-
-    struct DonationView_Previews: PreviewProvider {
-        static var previews: some View {
-            DonationView()
+            }.navigationTitle("Want to Share Food ?")
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
+}
+
+struct DonationView_Previews: PreviewProvider {
+    static var previews: some View {
+        DonationView()
+    }
+}
